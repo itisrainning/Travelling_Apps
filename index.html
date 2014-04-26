@@ -8,40 +8,39 @@
 <script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
 <script src="phonegap.js"></script>
 <link href="css/index.css" rel="stylesheet" type="text/css" />
-
 </head> 
 <body> 
 
 <div data-role="page" id="page">
 	<div data-role="header">
+        
 		<h1>Traveler</h1>
 	</div>
-	<div data-role="content" id="submenu">	
-		<ul data-role="listview">
-			<li><a href="#page2">Page Two</a></li>
-            <li><a href="#page3">Tokyo</a></li>
-			<li><a href="#page4">Page Four</a></li>
-		</ul>		
-	</div>
+	<div data-role="content">
+
+    <ul data-role="listview">
+      <li data-role="list-divider">Europe</li>
+      <li><a href="#">Germany</a></li>
+      <li><a href="#">Britain</a></li>
+      <li data-role="list-divider">Asia</li>
+      <li><a href="#">China</a></li>
+      <li><a href="#Japan">Japan</a></li>
+      <li data-role="list-divider">Africa</li>
+      <li><a href="#">Egypt</a></li>
+      <li><a href="#">South Africa</a></li>
+    </ul>
+    	</div>
 	<div data-role="footer">
 		<h4>Page Footer</h4>
 	</div>
 </div>
 
-<div data-role="page" id="page2">
-	<div data-role="header">
-		<h1>Page Two</h1>
-	</div>
-	<div id="content" data-role="content">Content		
-	</div>
-	<div data-role="footer">
-		<h4>Page Footer</h4>
-	</div>
-</div>
 
-<div data-role="page" id="page3">
+<div data-role="page" id="Japan">
 	<div data-role="header">
-		<h1>Tokyo</h1>
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>Tokyo</h1> 
 	</div>
     <div class="spot_image">	
 		<img src="images/tokyo.jpg" id="banner_image">		
@@ -49,12 +48,12 @@
 	<div data-role="content">	
 		<p>Tokyo is Japan's capital and the world's most populous metropolis. It is also one of Japan's 47 prefectures, consisting of 23 central city wards and multiple cities, towns and villages west of the city center. The Izu and Ogasawara Islands are also part of Tokyo.</p>		
 	</div>
-    <div data-role="food" id="submenu">
-      <ul data-role="submenu">
-		<li><h4><a href="#food">Food</a></h4></li>
-		<li><h4><a href="#hot spot">Hot Spot</a></h4></li>
-		<li><h4><a href="#travel info">Travel Info</a></h4></li>
-      </ul>
+    <div data-role="content">
+		<ul data-role="listview" id="submenu">
+			<li><a href="#Food">Food</a></li>
+            <li><a href="#page3">Tokyo</a></li>
+			<li><a href="#page4">Page Four</a></li>
+		</ul>	
 	</div>
     <div data-role="footer">
 		<h4>Footer</h4>
@@ -62,28 +61,25 @@
 </div>
 
 
-
-<div data-role="page" id="food">
+<div data-role="page" id="Food">
 	<div data-role="header">
+        
 		<h1>Traveler</h1>
 	</div>
-	<div data-role="content" id="submenu">	
-		<ul data-role="listview">
-			<li><a href="#Sushi">Sushi</a></li>
-            <li><a href="#page3">Hot Spot</a></li>
-			<li><a href="#page4">Travel Info</a></li>
-		</ul>		
-	</div>
+	<div data-role="content">
+    <ul data-role="listview">
+      <li><a href="#Sushi">Sushi</a></li>
+      <li><a href="#">Britain</a></li>
+      <li><a href="#">Germany</a></li>
+      <li><a href="#">Britain</a></li>
+      <li><a href="#">Germany</a></li>
+      <li><a href="#">Britain</a></li>
+    </ul>
+    	</div>
 	<div data-role="footer">
 		<h4>Page Footer</h4>
 	</div>
 </div>
-
-
-
-
-
-
 
 
 <div data-role="page" id="Sushi">
@@ -100,6 +96,12 @@
 		<h4>Page Footer</h4>
 	</div>
 </div>
+
+
+
+
+
+
 
 </body>
 </html>
