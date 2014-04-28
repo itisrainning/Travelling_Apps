@@ -10,6 +10,16 @@
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile.structure-1.3.2.min.css" />
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+
+
+
+  <!-- Core mapsed styles -->
+  <link href="mapsed.css" rel="stylesheet">
+  <link href="examples/examples.css" rel="stylesheet">
+
+
+
+
 </head> 
 
 
@@ -49,14 +59,14 @@
 
     <ul data-role="listview">
       <li data-role="list-divider">Europe</li>
-      <li><a href="#">Germany</a></li>
-      <li><a href="#">Britain</a></li>
+      <li><a href="#Germany">Germany</a></li>
+      <li><a href="#France">France</a></li>
       <li data-role="list-divider">Asia</li>
-      <li><a href="#">China</a></li>
+      <li><a href="#China">China</a></li>
       <li><a href="#Japan">Japan</a></li>
       <li data-role="list-divider">Africa</li>
-      <li><a href="#">Egypt</a></li>
-      <li><a href="#">South Africa</a></li>
+      <li><a href="#Egypt">Egypt</a></li>
+
     </ul>
     	</div>
 	<div data-role="footer">
@@ -64,6 +74,991 @@
 	</div>
 </div>
 
+
+<div data-role="page" id="Germany">
+	<div data-role="header">
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>Germany</h1> 
+	</div>
+    <div class="spot_image">	
+		<center><img src="images/Germany.jpg" id="banner_image" ></center>		
+	</div>
+	<div data-role="content">	
+		<p id="paragraph">Tokyo is Japan's capital and the world's most populous metropolis. It is also one of Japan's 47 prefectures, consisting of 23 central city wards and multiple cities, towns and villages west of the city center. The Izu and Ogasawara Islands are also part of Tokyo.</p>		
+	
+    <ul data-role="listview" data-inset="true">
+      <li data-role="divider" data-theme="a">Recommend Tourist Spots</li>
+      <li>
+        <a href="#Berlin"  data-transition="slidedown">
+        <img src="images/Berlin.jpg" id="list_image"/>
+        <h2>Berlin</h2>
+        </a>
+      </li>
+      <li>
+        <a href="#Frankfurt">
+        <img src="images/Frankfurt.jpg" id="list_image">
+        <h2>Frankfurt</h2>
+        </a>
+      </li>
+	   <li>
+        <a href="#Munich">
+        <img src="images/Munich.jpg" id="list_image">
+        <h2>Munich</h2> 
+        </a>
+      </li>
+    </ul>
+</div>  
+    <div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="Berlin">
+	<div data-role="header">
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>Berlin</h1> 
+	</div>
+    <div class="spot_image">	
+		<center><img src="images/Berlin.jpg" id="banner_image" ></center>		
+	</div>
+	<div data-role="content">	
+		<p id="paragraph">
+		Berlin is the capital city of Germany and one of the 16 states of Germany. With a population of 3.4 million people,Berlin is Germany's largest city, the second most populous city proper, and the seventh most populous urban area in the European Union.Located in northeastern Germany on the River Spree, it is the center of the Berlin-Brandenburg Metropolitan Region, which has about 4.5 million residents from over 180 nations.Due to its location in the European Plain, Berlin is influenced by a temperate seasonal climate. Around one third of the city's area is composed of forests, parks, gardens, rivers and lakes.
+		</p>			
+    <ul data-role="listview" data-inset="true">
+      <li data-role="divider" data-theme="a">Recommendation</li>
+      <li>
+        <a href="#Berlin_Food"  data-transition="slidedown" >
+        <img src="images/Currywurst.jpg" id="list_image"/>
+        <h2>Food</h2>
+        </a>
+      </li>
+      <li>
+        <a href="#Berlin_Spot">
+        <img src="images/Reichstag building.jpg" id="list_image">
+        <h2>Tourist Spot</h2>
+        </a>
+      </li>
+    </ul>
+</div>  
+    <div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="Berlin_Food">
+	<div data-role="header" >
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>Berlin Food</h1>
+	</div>
+	<div data-role="content">
+    <ul data-role="listview">
+      <li data-role="divider" data-theme="a">Recommmendation</li>
+      <li><a href="#Currywurst"><img src="images/Currywurst.jpg" id="list_image"/>Currywurst</a></li>
+      <li><a href="#Roasted Pork Knuckle"><img src="images/Roasted Pork Knuckle.jpg" id="list_image"/>Roasted Pork Knuckle</a></li>
+      <li><a href="#Sauerbraten"><img src="images/Sauerbraten.jpg" id="list_image"/>Sauerbraten</a></li>
+    </ul>
+    	</div>
+	<div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="Currywurst">
+	<div data-role="header">
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>Currywurst</h1>
+	</div>
+	<div id="content" data-role="content">
+    <center><img src="images/Currywurst.jpg" id="banner_image"></center>
+    <p id="paragraph">
+	Currywurst is a fast food dish of German origin consisting of steamed, then fried pork sausage (German: Wurst) cut into slices and seasoned with curry ketchup, regularly consisting of ketchup or tomato paste blended with generous amounts of curry powder, or a ready-made ketchup-based sauce seasoned with curry and other spices.
+</p>		
+	</div>
+	<div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+
+<div data-role="page" id="Roasted Pork Knuckle">
+	<div data-role="header">
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>Roasted Pork Knuckle</h1>
+	</div>
+	<div id="content" data-role="content">
+    <center><img src="images/Roasted Pork Knuckle.jpg" id="banner_image"></center>
+    <p id="paragraph">
+Roasted Pork Knuckle, in German cuisine, is a roasted ham hock (or “pork knuckle”),especially popular in Bavaria.
+    </p>		
+	</div>
+	<div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="Sauerbraten">
+	<div data-role="header">
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>Sauerbraten</h1>
+	</div>
+	<div id="content" data-role="content">
+    <center><img src="images/Sauerbraten.jpg" id="banner_image"></center>
+    <p id="paragraph">
+	Sauerbraten is a German pot roast that can be prepared with a variety of meats—most often beef, but also from venison, lamb, mutton, pork, and traditionally, horse.Before cooking, the cut of meat is marinated for several days (recipes vary from three to ten days) in a mixture of vinegar or wine, water, herbs, spices and seasonings. Since usually tougher cuts of meat (like rump roast, or bottom round of beef) are used for Sauerbraten, the longer marinating of the meat acts to tenderize it, resulting in a finished dish that is tender, soft, and juicy. The ingredients of the marinade vary based on regional styles and traditions throughout Germany.
+    </p>		
+	</div>
+	<div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="Frankfurt">
+	<div data-role="header">
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>Berlin</h1> 
+	</div>
+    <div class="spot_image">	
+		<center><img src="images/Frankfurt.jpg" id="banner_image" ></center>		
+	</div>
+	<div data-role="content">	
+		<p id="paragraph">
+		Frankfurt, commonly known as Frankfurt, is the largest city in the German state of Hesse and the fifth-largest city in Germany, with a population of 687,775 (2012) within its administrative boundaries. The actual urban area has a population of 2,500,000. The city is at the centre of the larger Frankfurt Rhine-Main Metropolitan Region which has a population of 5,600,000 and is Germany's second-largest metropolitan region. Since the enlargement of the European Union in 2013, the geographic centre of the EU is about 40 km (25 mi) east of Frankfurt.
+		</p>			
+    <ul data-role="listview" data-inset="true">
+      <li data-role="divider" data-theme="a">Recommendation</li>
+      <li>
+        <a href="#Frankfurt_Food"  data-transition="slidedown" >
+        <img src="images/Apfelwein.jpg" id="list_image"/>
+        <h2>Food</h2>
+        </a>
+      </li>
+      <li>
+        <a href="#Frankfurt_Spot">
+        <img src="images/Goethe House.jpg" id="list_image">
+        <h2>Tourist Spot</h2>
+        </a>
+      </li>
+    </ul>
+</div>  
+    <div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="Frankfurt_Food">
+	<div data-role="header" >
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>Frankfurt Food</h1>
+	</div>
+	<div data-role="content">
+    <ul data-role="listview">
+      <li data-role="divider" data-theme="a">Recommmendation</li>
+      <li><a href="#Apfelwein"><img src="images/Apfelwein.jpg" id="list_image"/>Apfelwein</a></li>
+      <li><a href="#Handkäse"><img src="images/Handkäse.jpg" id="list_image"/>Handkäse</a></li>
+    </ul>
+    	</div>
+	<div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="Apfelwein">
+	<div data-role="header">
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>Apfelwein</h1>
+	</div>
+	<div id="content" data-role="content">
+    <center><img src="images/Apfelwein.jpg" id="banner_image"></center>
+    <p id="paragraph">
+	Apfelwein (Germany, apple wine), or Most (Austria, Switzerland, South Germany, must) are German words for cider.It is also regionally known as Ebbelwoi, Äppler, Stöffsche, Apfelmost (apple must), Viez (from Latin vice, the second or substitute wine), and saurer Most (sour must).
+</p>		
+	</div>
+	<div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="Handkäse">
+	<div data-role="header">
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>Handkäse</h1>
+	</div>
+	<div id="content" data-role="content">
+    <center><img src="images/Handkäse.jpg" id="banner_image"></center>
+    <p id="paragraph">
+Handkäse is a German regional sour milk cheese (similar to Harzer) and is a culinary speciality of Frankfurt am Main, Offenbach am Main, Darmstadt, Langen and all other parts of southern Hesse. It gets its name from the traditional way of producing it: forming it with one's own hands.
+    </p>		
+	</div>
+	<div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="Munich">
+	<div data-role="header">
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>Munich</h1> 
+	</div>
+    <div class="spot_image">	
+		<center><img src="images/Munich.jpg" id="banner_image" ></center>		
+	</div>
+	<div data-role="content">	
+		<p id="paragraph">
+		Munich is the capital and largest city of the German state of Bavaria. It is located on the River Isar north of the Bavarian Alps. Munich is the third largest city in Germany, after Berlin and Hamburg. About 1.5 million people live within the city limits. Its inhabitants are sometimes called Munichers in English.
+		</p>			
+    <ul data-role="listview" data-inset="true">
+      <li data-role="divider" data-theme="a">Recommendation</li>
+      <li>
+        <a href="#Munich_Food"  data-transition="slidedown" >
+        <img src="images/Munich beer.jpg" id="list_image"/>
+        <h2>Food</h2>
+        </a>
+      </li>
+      <li>
+        <a href="#Munich_Spot">
+        <img src="images/BMW Museum.jpg" id="list_image">
+        <h2>Tourist Spot</h2>
+        </a>
+      </li>
+    </ul>
+</div>  
+    <div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="Berlin_Spot">
+	<div data-role="header" >
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>Tourist Spot</h1>
+	</div>
+	<div data-role="content">
+    <ul data-role="listview">
+      <li data-role="divider" data-theme="a">Recommmendation</li>
+      <li><a href="#Berliner_Dom"><img src="images/Berliner Dom.jpg" id="list_image"/>Berliner Dom</a></li>
+      <li><a href="#Reichstag_building"><img src="images/Reichstag building.jpg" id="list_image"/>Reichstag building</a></li>
+      <li><a href="#Brandenburg_Gate"><img src="images/Brandenburg Gate.jpg" id="list_image"/>Brandenburg Gate</a></li>
+    </ul>
+    	</div>
+	<div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="Berliner_Dom">
+	<div data-role="header">
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>Berliner Dom</h1>
+	</div>
+	<div id="content" data-role="content">
+    <center><img src="images/Berliner Dom.jpg" id="banner_image"></center>
+    <p id="paragraph">
+	Berlin Cathedral (German: Berliner Dom) is the short name for the Evangelical (i.e. Protestant) Supreme Parish and Collegiate Church (German: Oberpfarr- und Domkirche) in Berlin, Germany. It is located on Museum Island in the Mitte borough. The current building was finished in 1905 and is a main work of Historicist architecture of the "Kaiserzeit".
+</p>		
+	</div>
+	<div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+
+<div data-role="page" id="Reichstag_building">
+	<div data-role="header">
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>Reichstag building</h1>
+	</div>
+	<div id="content" data-role="content">
+    <center><img src="images/Reichstag building.jpg" id="banner_image"></center>
+    <p id="paragraph">
+	The Reichstag building is a historical edifice in Berlin, Germany, constructed to house the Imperial Diet (German: Reichstag), of the German Empire. It was opened in 1894 and housed the Diet until 1933, when it was severely damaged in a fire. After World War II, the building fell into disuse; the parliament of the German Democratic Republic (the Volkskammer) met in the Palast der Republik in East Berlin, while the parliament of the Federal Republic of Germany (the Bundestag) met in the Bundeshaus in Bonn.
+</p>		
+	</div>
+	<div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="Brandenburg_Gate">
+	<div data-role="header">
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>Brandenburg Gate</h1>
+	</div>
+	<div id="content" data-role="content">
+    <center><img src="images/Brandenburg Gate.jpg" id="banner_image"></center>
+    <p id="paragraph">
+The Brandenburg Gate is a former city gate, rebuilt in the late 18th century as a neoclassical triumphal arch, and now one of the most well-known landmarks of Germany.
+    </p>		
+	</div>
+	<div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="Frankfurt_Spot">
+	<div data-role="header" >
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>Tourist Spot</h1>
+	</div>
+	<div data-role="content">
+    <ul data-role="listview">
+      <li data-role="divider" data-theme="a">Recommmendation</li>
+      <li><a href="#Goethe_House"><img src="images/Goethe House.jpg" id="list_image"/>Goethe House</a></li>
+      <li><a href="#Main_Tower"><img src="images/Main Tower.jpg" id="list_image"/>Main Tower</a></li>
+      <li><a href="#Church"><img src="images/St. Paul's Church.jpg" id="list_image"/>St. Paul's Church</a></li>
+    </ul>
+    	</div>
+	<div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="Goethe_House">
+	<div data-role="header">
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>Goethe House</h1>
+	</div>
+	<div id="content" data-role="content">
+    <center><img src="images/Goethe House.jpg" id="banner_image"></center>
+    <p id="paragraph">
+	The house was bought in 1733 by Goethe's grandmother, Cornelia Goethe, a guest house hostess. It was in fact originally two houses, dating from around 1600 in typical medieval wooden-fronted style, until 1755, when Goethe's father extensively remodeled and modernized them into the single structure we see today. Goethe writes in his autobiography that his father was careful to preserve the double overhang of the facade, which was not permitted in new buildings under the codes of 1719 and 1749, emphasizing that it was a remodeling of the existing structures and not a new construction.
+    </p>		
+	</div>
+	<div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="Main_Tower">
+	<div data-role="header">
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>Main Tower</h1>
+	</div>
+	<div id="content" data-role="content">
+    <center><img src="images/Main Tower.jpg" id="banner_image"></center>
+    <p id="paragraph">
+	Main Tower is a 56-storey, 200 m (656 ft) skyscraper in the Innenstadt district of Frankfurt, Germany. It is named after the nearby Main river. The building is 240 m (787 ft) when its antenna spire is included.
+    </p>		
+	</div>
+	<div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="Church">
+	<div data-role="header">
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>St. Paul's Church</h1>
+	</div>
+	<div id="content" data-role="content">
+    <center><img src="images/St. Paul's Church.jpg" id="banner_image"></center>
+    <p id="paragraph">
+	St Paul's Church in Frankfurt am Main is a church with important political symbolism in Germany. It was started as a Lutheran church in 1789—coincidentally the same year as the French Revolution. By 1849, it had become the seat of the Frankfurt Parliament, the first publicly and freely-elected German legislative body.
+    </p>		
+	</div>
+	<div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="Munich_Spot">
+	<div data-role="header" >
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>Tourist Spot</h1>
+	</div>
+	<div data-role="content">
+    <ul data-role="listview">
+      <li data-role="divider" data-theme="a">Recommmendation</li>
+      <li><a href="#Nymphenburg_Palace"><img src="images/Nymphenburg Palace.jpg" id="list_image"/>Nymphenburg Palace</a></li>
+      <li><a href="#BMW_Museum"><img src="images/BMW Museum.jpg" id="list_image"/>BMW Museum</a></li>
+      <li><a href="#Deutsches_Museum"><img src="images/Deutsches Museum.jpg" id="list_image"/>Deutsches Museum</a></li>
+    </ul>
+    	</div>
+	<div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="Nymphenburg_Palace">
+	<div data-role="header">
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>Nymphenburg Palace</h1>
+	</div>
+	<div id="content" data-role="content">
+    <center><img src="images/Nymphenburg Palace.jpg" id="banner_image"></center>
+    <p id="paragraph">
+	The Nymphenburg Palace is a Baroque palace in Munich, Bavaria, southern Germany. The palace was the main summer residence of the rulers of Bavaria of the House of Wittelsbach.
+</p>		
+	</div>
+	<div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="BMW_Museum">
+	<div data-role="header">
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>BMW Museum</h1>
+	</div>
+	<div id="content" data-role="content">
+    <center><img src="images/BMW Museum.jpg" id="banner_image"></center>
+    <p id="paragraph">
+	The BMW Museum is an automobile museum in Munich, Germany. Located near the Olympiapark, it deals with the history of the automobile manufacturer BMW.
+The museum was established in 1973, shortly after the Summer Olympics opened. From 2004 to 2008, it was renovated in connection with the construction of the BMW Welt, directly opposite. The museum reopened on June 21, 2008.
+</p>		
+	</div>
+	<div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="Deutsches_Museum">
+	<div data-role="header">
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>Deutsches Museum</h1>
+	</div>
+	<div id="content" data-role="content">
+    <center><img src="images/Deutsches Museum.jpg" id="banner_image"></center>
+    <p id="paragraph">
+	The Deutsches Museum in Munich, Germany, is the world's largest museum of science and technology,[1] with approximately 1.5 million visitors per year and about 28,000 exhibited objects from 50 fields of science and technology.
+	</p>		
+	</div>
+	<div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="France">
+	<div data-role="header">
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>France</h1> 
+	</div>
+    <div class="spot_image">	
+		<center><img src="images/France.jpg" id="banner_image" ></center>		
+	</div>
+	<div data-role="content">	
+		<p id="paragraph">
+		France is a sovereign country in Western Europe that includes overseas regions and territories.Metropolitan France extends from the Mediterranean Sea to the English Channel and the North Sea, and from the Rhine to the Atlantic Ocean. It is one of only three countries (with Morocco and Spain) to have both Atlantic and Mediterranean coastlines. Due to its shape, it is often referred to in French as l’Hexagone ("The Hexagon").
+		</p>		
+	
+    <ul data-role="listview" data-inset="true">
+      <li data-role="divider" data-theme="a">Recommend Tourist Spots</li>
+      <li>
+        <a href="#Paris"  data-transition="slidedown">
+        <img src="images/Paris.jpg" id="list_image"/>
+        <h2>Paris</h2>
+        </a>
+      </li>
+      <li>
+        <a href="#Bordeaux">
+        <img src="images/Bordeaux.jpg" id="list_image">
+        <h2>Bordeaux</h2>
+        </a>
+      </li>
+	   <li>
+        <a href="#Provence">
+        <img src="images/Provence.jpg" id="list_image">
+        <h2>Provence</h2> 
+        </a>
+      </li>
+    </ul>
+</div>  
+    <div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="Paris">
+	<div data-role="header">
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>Paris</h1> 
+	</div>
+    <div class="spot_image">	
+		<center><img src="images/Paris.jpg" id="banner_image" ></center>		
+	</div>
+	<div data-role="content">	
+		<p id="paragraph">
+		Paris is the capital and most populous city of France. It is situated on the Seine River, in the north of the country, at the heart of the Île-de-France region. Within its administrative limits (the 20 arrondissements), the city had 2,234,105 inhabitants in 2009 while its metropolitan area is one of the largest population centres in Europe with more than 12 million inhabitants.
+		</p>			
+    <ul data-role="listview" data-inset="true">
+      <li data-role="divider" data-theme="a">Recommendation</li>
+      <li>
+        <a href="#Paris_Food"  data-transition="slidedown" >
+        <img src="images/France Food.jpg" id="list_image">
+        <h2>Food</h2>
+        </a>
+      </li>
+      <li>
+        <a href="#Berlin_Spot">
+        <img src="images/Reichstag building.jpg" id="list_image">
+        <h2>Tourist Spot</h2>
+        </a>
+      </li>
+    </ul>
+</div>  
+    <div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="Paris_Food">
+	<div data-role="header" >
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>Paris Food</h1>
+	</div>
+	<div data-role="content">
+    <ul data-role="listview">
+      <li data-role="divider" data-theme="a">Recommmendation</li>
+      <li><a href="#Macarons"><img src="images/Macarons.jpg" id="list_image"/>Macarons</a></li>
+      <li><a href="#Escargot "><img src="images/Escargot.jpg" id="list_image"/>Escargot </a></li>
+      <li><a href="#Foie Gras"><img src="images/Foie Gras.jpg" id="list_image"/>Foie Gras</a></li>
+    </ul>
+    	</div>
+	<div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="Macarons">
+	<div data-role="header">
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>Macarons</h1>
+	</div>
+	<div id="content" data-role="content">
+    <center><img src="images/Macarons.jpg" id="banner_image"></center>
+    <p id="paragraph">
+	A macaron is a sweet meringue-based confection made with eggs, icing sugar, granulated sugar, almond powder or ground almond, and food colouring. The macaron is commonly filled with ganache, buttercream or jam filling sandwiched between two biscuits. The name is derived from the Italian word macarone, maccarone or maccherone, the Italian meringue.
+</p>		
+	</div>
+	<div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+
+<div data-role="page" id="Escargot ">
+	<div data-role="header">
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>Escargot</h1>
+	</div>
+	<div id="content" data-role="content">
+    <center><img src="images/Escargot.jpg" id="banner_image"></center>
+    <p id="paragraph">
+Escargot is a dish of cooked land snails, usually served as an appetizer in France and in French restaurants. The word escargot is also sometimes applied to the living snails of those species which are commonly eaten in this way.
+ </p>		
+	</div>
+	<div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="Foie Gras">
+	<div data-role="header">
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>Foie Gras</h1>
+	</div>
+	<div id="content" data-role="content">
+    <center><img src="images/Foie Gras.jpg" id="banner_image"></center>
+    <p id="paragraph">
+	Foie gras is a food product made of the liver of a duck or goose that has been specially fattened. By French law, foie gras is defined as the liver of a duck or goose fattened by force-feeding corn with a gavage, although in Spain and other counties outside of France it is occasionally produced using natural feeding.
+    </p>		
+	</div>
+	<div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="Bordeaux">
+	<div data-role="header">
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>Bordeaux</h1> 
+	</div>
+    <div class="spot_image">	
+		<center><img src="images/Bordeaux.jpg" id="banner_image" ></center>		
+	</div>
+	<div data-role="content">	
+		<p id="paragraph">
+		Bordeaux is a port city on the Garonne River in the Gironde department in southwestern France.
+		</p>			
+    <ul data-role="listview" data-inset="true">
+      <li data-role="divider" data-theme="a">Recommendation</li>
+      <li>
+        <a href="#Bordeaux_Food"  data-transition="slidedown" >
+        <img src="images/Bordeaux Wine.jpg" id="list_image"/>
+        <h2>Food</h2>
+        </a>
+      </li>
+      <li>
+        <a href="#Bordeaux_Spot">
+        <img src="images/Mirage Square.jpg" id="list_image">
+        <h2>Tourist Spot</h2>
+        </a>
+      </li>
+    </ul>
+</div>  
+    <div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="Bordeaux_Wine">
+	<div data-role="header">
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>Bordeaux Wine</h1>
+	</div>
+	<div id="content" data-role="content">
+    <center><img src="images/Bordeaux Wine.jpg" id="banner_image"></center>
+    <p id="paragraph">
+	A Bordeaux wine is any wine produced in the Bordeaux region of France, centred on the city of Bordeaux and covering the whole area of the Gironde department, with a total vineyard area of over 120,000 hectares, making it the largest wine growing area in France. 
+</p>		
+	</div>
+	<div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="Bordeaux_Food">
+	<div data-role="header" >
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>Bordeaux Food</h1>
+	</div>
+	<div data-role="content">
+    <ul data-role="listview">
+      <li data-role="divider" data-theme="a">Recommmendation</li>
+      <li><a href="#Bordeaux_Wine"><img src="images/Bordeaux Wine.jpg" id="list_image"/>Bordeaux Wine</a></li>
+      <li><a href="#Bordelaise sauce"><img src="images/Bordelaise sauce.jpg" id="list_image"/>Bordelaise sauce</a></li>
+    </ul>
+    	</div>
+	<div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="Bordeaux_Spot">
+	<div data-role="header">
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>Mirage Square</h1>
+	</div>
+	<div id="content" data-role="content">
+    <center><img src="images/Mirage Square.jpg" id="banner_image"></center>
+    <p id="paragraph">
+   Mirage Square is a port city on the Garonne River in the Gironde department in southwestern France.    </p>		
+	</div>
+	<div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="Bordelaise sauce">
+	<div data-role="header">
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>Bordelaise sauce</h1>
+	</div>
+	<div id="content" data-role="content">
+    <center><img src="images/Bordelaise sauce.jpg" id="banner_image"></center>
+    <p id="paragraph">
+	Bordelaise sauce is a classic French sauce named after the Bordeaux region of France, which is famous for its wine. The sauce is made with dry red wine, bone marrow, butter, shallots and sauce demi-glace. Sauce marchand de vins ("wine-merchant's sauce") is a similar designation. Traditionally, bordelaise sauce is served with grilled beef or steak, though it can also be served with other meats that pair well with red wine demi-glace based sauces.
+    </p>		
+	</div>
+	<div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="Provence">
+	<div data-role="header">
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>Provence</h1> 
+	</div>
+    <div class="spot_image">	
+		<center><img src="images/Provence.jpg" id="banner_image" ></center>		
+	</div>
+	<div data-role="content">	
+		<p id="paragraph">
+		Provence is a geographical region and historical province of southeastern France, which extends from the left bank of the lower Rhône River on the west to the Italian border on the east, and is bordered by the Mediterranean Sea on the south. It largely corresponds with the modern administrative région of Provence-Alpes-Côte d'Azur, and includes the départements of Var, Bouches-du-Rhône, Alpes-de-Haute-Provence and parts of Alpes-Maritimes and Vaucluse.
+		</p>			
+    <ul data-role="listview" data-inset="true">
+      <li data-role="divider" data-theme="a">Recommendation</li>
+      <li>
+        <a href="#Provence_Food"  data-transition="slidedown" >
+        <img src="images/Munich beer.jpg" id="list_image"/>
+        <h2>Food</h2>
+        </a>
+      </li>
+      <li>
+        <a href="#Munich_Spot">
+        <img src="images/Munich Spot.jpg" id="list_image">
+        <h2>Tourist Spot</h2>
+        </a>
+      </li>
+    </ul>
+</div>  
+    <div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+
+<div data-role="page" id="Berliner_Dom">
+	<div data-role="header">
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>Berliner Dom</h1>
+	</div>
+	<div id="content" data-role="content">
+    <center><img src="images/Berliner Dom.jpg" id="banner_image"></center>
+    <p id="paragraph">
+	Berlin Cathedral (German: Berliner Dom) is the short name for the Evangelical (i.e. Protestant) Supreme Parish and Collegiate Church (German: Oberpfarr- und Domkirche) in Berlin, Germany. It is located on Museum Island in the Mitte borough. The current building was finished in 1905 and is a main work of Historicist architecture of the "Kaiserzeit".
+</p>		
+	</div>
+	<div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+
+<div data-role="page" id="Reichstag_building">
+	<div data-role="header">
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>Reichstag building</h1>
+	</div>
+	<div id="content" data-role="content">
+    <center><img src="images/Reichstag building.jpg" id="banner_image"></center>
+    <p id="paragraph">
+	The Reichstag building is a historical edifice in Berlin, Germany, constructed to house the Imperial Diet (German: Reichstag), of the German Empire. It was opened in 1894 and housed the Diet until 1933, when it was severely damaged in a fire. After World War II, the building fell into disuse; the parliament of the German Democratic Republic (the Volkskammer) met in the Palast der Republik in East Berlin, while the parliament of the Federal Republic of Germany (the Bundestag) met in the Bundeshaus in Bonn.
+</p>		
+	</div>
+	<div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="Brandenburg_Gate">
+	<div data-role="header">
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>Brandenburg Gate</h1>
+	</div>
+	<div id="content" data-role="content">
+    <center><img src="images/Brandenburg Gate.jpg" id="banner_image"></center>
+    <p id="paragraph">
+The Brandenburg Gate is a former city gate, rebuilt in the late 18th century as a neoclassical triumphal arch, and now one of the most well-known landmarks of Germany.
+    </p>		
+	</div>
+	<div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="Frankfurt_Spot">
+	<div data-role="header" >
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>Tourist Spot</h1>
+	</div>
+	<div data-role="content">
+    <ul data-role="listview">
+      <li data-role="divider" data-theme="a">Recommmendation</li>
+      <li><a href="#Goethe_House"><img src="images/Goethe House.jpg" id="list_image"/>Goethe House</a></li>
+      <li><a href="#Main_Tower"><img src="images/Main Tower.jpg" id="list_image"/>Main Tower</a></li>
+      <li><a href="#Church"><img src="images/St. Paul's Church.jpg" id="list_image"/>St. Paul's Church</a></li>
+    </ul>
+    	</div>
+	<div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="Goethe_House">
+	<div data-role="header">
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>Goethe House</h1>
+	</div>
+	<div id="content" data-role="content">
+    <center><img src="images/Goethe House.jpg" id="banner_image"></center>
+    <p id="paragraph">
+	The house was bought in 1733 by Goethe's grandmother, Cornelia Goethe, a guest house hostess. It was in fact originally two houses, dating from around 1600 in typical medieval wooden-fronted style, until 1755, when Goethe's father extensively remodeled and modernized them into the single structure we see today. Goethe writes in his autobiography that his father was careful to preserve the double overhang of the facade, which was not permitted in new buildings under the codes of 1719 and 1749, emphasizing that it was a remodeling of the existing structures and not a new construction.
+    </p>		
+	</div>
+	<div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="Main_Tower">
+	<div data-role="header">
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>Main Tower</h1>
+	</div>
+	<div id="content" data-role="content">
+    <center><img src="images/Main Tower.jpg" id="banner_image"></center>
+    <p id="paragraph">
+	Main Tower is a 56-storey, 200 m (656 ft) skyscraper in the Innenstadt district of Frankfurt, Germany. It is named after the nearby Main river. The building is 240 m (787 ft) when its antenna spire is included.
+    </p>		
+	</div>
+	<div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="Church">
+	<div data-role="header">
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>St. Paul's Church</h1>
+	</div>
+	<div id="content" data-role="content">
+    <center><img src="images/St. Paul's Church.jpg" id="banner_image"></center>
+    <p id="paragraph">
+	St Paul's Church in Frankfurt am Main is a church with important political symbolism in Germany. It was started as a Lutheran church in 1789—coincidentally the same year as the French Revolution. By 1849, it had become the seat of the Frankfurt Parliament, the first publicly and freely-elected German legislative body.
+    </p>		
+	</div>
+	<div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="Munich_Spot">
+	<div data-role="header" >
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>Tourist Spot</h1>
+	</div>
+	<div data-role="content">
+    <ul data-role="listview">
+      <li data-role="divider" data-theme="a">Recommmendation</li>
+      <li><a href="#Nymphenburg_Palace"><img src="images/Nymphenburg Palace.jpg" id="list_image"/>Nymphenburg Palace</a></li>
+      <li><a href="#BMW_Museum"><img src="images/BMW Museum.jpg" id="list_image"/>BMW Museum</a></li>
+      <li><a href="#Deutsches_Museum"><img src="images/Deutsches Museum.jpg" id="list_image"/>Deutsches Museum</a></li>
+    </ul>
+    	</div>
+	<div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="Nymphenburg_Palace">
+	<div data-role="header">
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>Nymphenburg Palace</h1>
+	</div>
+	<div id="content" data-role="content">
+    <center><img src="images/Nymphenburg Palace.jpg" id="banner_image"></center>
+    <p id="paragraph">
+	The Nymphenburg Palace is a Baroque palace in Munich, Bavaria, southern Germany. The palace was the main summer residence of the rulers of Bavaria of the House of Wittelsbach.
+</p>		
+	</div>
+	<div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="BMW_Museum">
+	<div data-role="header">
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>BMW Museum</h1>
+	</div>
+	<div id="content" data-role="content">
+    <center><img src="images/BMW Museum.jpg" id="banner_image"></center>
+    <p id="paragraph">
+	The BMW Museum is an automobile museum in Munich, Germany. Located near the Olympiapark, it deals with the history of the automobile manufacturer BMW.
+The museum was established in 1973, shortly after the Summer Olympics opened. From 2004 to 2008, it was renovated in connection with the construction of the BMW Welt, directly opposite. The museum reopened on June 21, 2008.
+</p>		
+	</div>
+	<div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="Deutsches_Museum">
+	<div data-role="header">
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>Deutsches Museum</h1>
+	</div>
+	<div id="content" data-role="content">
+    <center><img src="images/Deutsches Museum.jpg" id="banner_image"></center>
+    <p id="paragraph">
+	The Deutsches Museum in Munich, Germany, is the world's largest museum of science and technology,[1] with approximately 1.5 million visitors per year and about 28,000 exhibited objects from 50 fields of science and technology.
+	</p>		
+	</div>
+	<div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="China">
+	<div data-role="header">
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>China</h1> 
+	</div>
+    <div class="spot_image">	
+		<center><img src="images/China.jpg" id="banner_image" ></center>		
+	</div>
+	<div data-role="content">	
+		<p id="paragraph">Tokyo is Japan's capital and the world's most populous metropolis. It is also one of Japan's 47 prefectures, consisting of 23 central city wards and multiple cities, towns and villages west of the city center. The Izu and Ogasawara Islands are also part of Tokyo.</p>		
+	
+    <ul data-role="listview" data-inset="true">
+      <li data-role="divider" data-theme="a">Recommendation</li>
+      <li>
+        <a href="#Food"  data-transition="slidedown">
+        <img src="images/Sushi.jpg" id="list_image"/>
+        <h2>Food</h2>
+        </a>
+      </li>
+      <li>
+        <a href="#Travel_Spot">
+        <img src="images/Sushi.jpg" id="list_image">
+        <h2>Travel Spot</h2>
+        </a>
+      </li>
+    </ul>
+</div>  
+    <div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
 
 <div data-role="page" id="Japan">
 	<div data-role="header">
@@ -75,22 +1070,22 @@
 		<center><img src="images/tokyo.jpg" id="banner_image" ></center>		
 	</div>
 	<div data-role="content">	
-		<p id="paragraph">Tokyo is Japan's capital and the world's most populous metropolis. It is also one of Japan's 47 prefectures, consisting of 23 central city wards and multiple cities, towns and villages west of the city center. The Izu and Ogasawara Islands are also part of Tokyo.</p>		
+		<p id="paragraph">
+		Japan is an island nation in East Asia. Located in the Pacific Ocean, it lies to the east of the Sea of Japan, China, North Korea, South Korea and Russia, stretching from the Sea of Okhotsk in the north to the East China Sea and Taiwan in the south. The characters that make up Japan's name mean "sun-origin", which is why Japan is sometimes referred to as the "Land of the Rising Sun".
+		</p>		
 	
-    <ul data-role="listview" data-inset="true" data-split-theme="e">
+    <ul data-role="listview" data-inset="true">
       <li data-role="divider" data-theme="a">Recommendation</li>
       <li>
-        <a href="#Food">
-        <img src="images/Sushi.jpg" id="list_image">
+        <a href="#Japan_Food"  data-transition="slidedown">
+        <img src="images/Sushi.jpg" id="list_image"/>
         <h2>Food</h2>
-        <p></p>
         </a>
       </li>
       <li>
-        <a href="#Travel_Spot">
-        <img src="images/Sushi.jpg" id="list_image">
-        <h2>Travel Spot</h2>
-        <p></p>
+        <a href="#Japan_Spot">
+        <img src="images/tokyo.jpg" id="list_image">
+        <h2>Tourist Spots</h2>
         </a>
       </li>
     </ul>
@@ -100,21 +1095,21 @@
 	</div>
 </div>
 
-
-<div data-role="page" id="Food">
-	<div data-role="header">
-        <a href="#page" data-role="button" data-icon="home">Home</a>
+<div data-role="page" id="Japan_Food">
+	<div data-role="header" >
+    <a href="#page" data-role="button" data-icon="home">Home</a>
     <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
-		<h1>Traveler</h1>
+		<h1>Japan Food</h1>
 	</div>
 	<div data-role="content">
     <ul data-role="listview">
-      <li><a href="#Sushi">Sushi</a></li>
-      <li><a href="#">Britain</a></li>
-      <li><a href="#">Germany</a></li>
-      <li><a href="#">Britain</a></li>
-      <li><a href="#">Germany</a></li>
-      <li><a href="#">Britain</a></li>
+      <li data-role="divider" data-theme="a">Recommmendation</li>
+      <li><a href="#Sushi"><img src="images/Sushi.jpg" id="list_image"/>Sushi</a></li>
+      <li><a href="#Tonkatsu"><img src="images/Tonkatsu.jpg" id="list_image"/>Tonkatsu</a></li>
+      <li><a href="#Okonomiyaki"><img src="images/Okonomiyaki.jpg" id="list_image"/>Okonomiyaki</a></li>
+	  <li><a href="#Ramen"><img src="images/Ramen.jpg" id="list_image"/>Ramen</a></li>
+	  <li><a href="#Green_Tea"><img src="images/Green Tea.jpg" id="list_image"/>Green Tea</a></li>
+	  <li><a href="#Sake"><img src="images/Sake.jpg" id="list_image"/>Sake</a></li>
     </ul>
     	</div>
 	<div data-role="footer">
@@ -122,44 +1117,16 @@
 	</div>
 </div>
 
-
-<div data-role="page" id="Travel_Spot">
-	<div data-role="header">
-    <a href="#page" data-role="button" data-icon="home">Home</a>
-    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
-		<h1>Travel Spot</h1>
-	</div>
-	
-    
-    
-    
-    
-    <div data-role="content" style="padding:0;">
-        <div id="map" style="width:100%;height:100%;"></div>
-    </div>
-    
-    
-    
-    
-    
-   
-	<div data-role="footer">
-		<h4>Footer</h4>
-	</div>
-</div>
-
-
-
 <div data-role="page" id="Sushi">
 	<div data-role="header">
     <a href="#page" data-role="button" data-icon="home">Home</a>
     <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
-		<h1>Travel Info</h1>
+		<h1>Sushi</h1>
 	</div>
 	<div id="content" data-role="content">
     <center><img src="images/Sushi.jpg" id="banner_image"></center>
     <p id="paragraph">
-    Sushi (すし, 寿司, 鮨, 鮓, 寿斗, 寿し, 壽司?) is a Japanese food consisting of cooked vinegared rice (鮨飯 sushi-meshi?) combined with other ingredients (ネタ neta?), seafood, vegetables and sometimes tropical fruits. Ingredients and forms of sushi presentation vary widely, but the ingredient which all sushi have in common is rice (also referred to as shari (しゃり?) or sumeshi 
+	Sushi is a Japanese food consisting of cooked vinegared ricecombined with other ingredients, seafood, vegetables and sometimes tropical fruits. Ingredients and forms of sushi presentation vary widely, but the ingredient which all sushi have in common is rice.
     </p>		
 	</div>
 	<div data-role="footer">
@@ -167,7 +1134,375 @@
 	</div>
 </div>
 
+<div data-role="page" id="Tonkatsu">
+	<div data-role="header">
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>Tonkatsu</h1>
+	</div>
+	<div id="content" data-role="content">
+    <center><img src="images/Tonkatsu.jpg" id="banner_image"></center>
+    <p id="paragraph">
+Tonkatsu is a Japanese food which consists of a breaded, deep-fried pork cutlet. There are two main types, hire and rosu. It is often served with shredded cabbage.
 
+Tonkatsu originated in Japan in the 19th century. As well as being served as a single dish, it is also used as a sandwich filling or in combination with curry.
+    </p>		
+	</div>
+	<div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="">
+	<div data-role="header">
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>Okonomiyaki</h1>
+	</div>
+	<div id="content" data-role="content">
+    <center><img src="images/Okonomiyaki.jpg" id="banner_image"></center>
+    <p id="paragraph">
+	Okonomiyaki is a Japanese savoury pancake containing a variety of ingredients. The name is derived from the word okonomi, meaning "what you like" or "what you want", and yaki meaning "grilled" or "cooked" (cf. yakitori and yakisoba). Okonomiyaki is mainly associated with the Kansai or Hiroshima areas of Japan, but is widely available throughout the country. Toppings and batters tend to vary according to region. Tokyo okonomiyaki is usually smaller than a Hiroshima or Kansai okonomiyaki.
+    </p>		
+	</div>
+	<div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="">
+	<div data-role="header">
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>Ramen</h1>
+	</div>
+	<div id="content" data-role="content">
+    <center><img src="images/Ramen.jpg" id="banner_image"></center>
+    <p id="paragraph">
+   Ramen is a Japanese noodle soup dish. It consists of Chinese-style wheat noodles served in a meat- or (occasionally) fish-based broth, often flavored with soy sauce or miso, and uses toppings such as sliced pork , dried seaweed, kamaboko, and green onions. Nearly every region in Japan has its own variation of ramen, from the tonkotsu (pork bone broth) ramen of Kyushu to the miso ramen of Hokkaido.   
+    </p>		
+	</div>
+	<div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="Green_Tea">
+	<div data-role="header">
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>Green Tea</h1>
+	</div>
+	<div id="content" data-role="content">
+    <center><img src="images/Green Tea.jpg" id="banner_image"></center>
+    <p id="paragraph">
+   Green tea is ubiquitous in Japan and therefore is more commonly known simply as "tea". It is even referred to as "Japanese tea", though it was first used in China during the Song Dynasty, and brought to Japan by Myōan Eisai, a Japanese Buddhist priest who also introduced the Rinzai school of Zen Buddhism.    </p>		
+	</div>
+	<div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="Sake">
+	<div data-role="header">
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>Sake</h1>
+	</div>
+	<div id="content" data-role="content">
+    <center><img src="images/Sake.jpg" id="banner_image"></center>
+    <p id="paragraph">
+    Sake is an alcoholic beverage of Japanese origin that is made from fermented rice. Sake is sometimes called "rice wine" but the brewing process is more akin to beer, converting starch to sugar for the fermentation process, by using Aspergillus oryzae.
+    </p>		
+	</div>
+	<div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="Japan_Spot">
+	<div data-role="header" >
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>Tourist Spots</h1>
+	</div>
+	<div data-role="content">
+    <ul data-role="listview">
+      <li data-role="divider" data-theme="a">Recommmendation</li>
+      <li><a href="#Tokyo"><img src="images/tokyo.jpg" id="list_image"/>Tokyo</a></li>
+      <li><a href="#Hokkaido"><img src="images/Hokkaido.jpg" id="list_image"/>Hokkaido</a></li>
+	  <li><a href="#Okinawa_Island"><img src="images/Okinawa Island.jpg" id="list_image"/>Okinawa Island</a></li>
+	  <li><a href="#Kyoto"><img src="images/Kyoto.jpg" id="list_image"/>Kyoto</a></li>
+    </ul>
+    	</div>
+	<div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="Tokyo">
+	<div data-role="header">
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>Tokyo</h1>
+	</div>
+	<div id="content" data-role="content">
+    <center><img src="images/tokyo.jpg" id="banner_image"></center>
+    <p id="paragraph">
+	Tokyo is one of the 47 prefectures of Japan. Tokyo is the capital of Japan, the center of the Greater Tokyo Area, and the most populous metropolitan area in the world.
+</p>		
+	</div>
+	<div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="Hokkaido">
+	<div data-role="header">
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>Hokkaido</h1>
+	</div>
+	<div id="content" data-role="content">
+    <center><img src="images/Hokkaido.jpg" id="banner_image"></center>
+    <p id="paragraph">
+	Hokkaido, formerly known as Ezo, Yezo, Yeso, or Yesso, is Japan's second largest island; it is also the largest and northernmost of Japan's 47 prefectures. The Tsugaru Strait separates Hokkaido from Honshu, although the two islands are connected by the underwater railway Seikan Tunnel. The largest city on Hokkaido is its capital, Sapporo, which is also its only ordinance-designated city.
+</p>		
+	</div>
+	<div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="Okinawa_Island">
+	<div data-role="header">
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>Okinawa Island</h1>
+	</div>
+	<div id="content" data-role="content">
+    <center><img src="images/Okinawa Island.jpg" id="banner_image"></center>
+    <p id="paragraph">
+	The island's population is known as the longest-lived people in the world, together with the Sardinians whose island is located in the Mediterranean sea; there are 34 centenarians per 100,000 people, which is more than three times the rate in Japan.
+</p>		
+	</div>
+	<div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="Kyoto">
+	<div data-role="header">
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>Kyoto</h1>
+	</div>
+	<div id="content" data-role="content">
+    <center><img src="images/Kyoto.jpg" id="banner_image"></center>
+    <p id="paragraph">
+	Kyoto historically known as Meaco is a city located in the central part of the island of Honshu, Japan. It has a population close to 1.5 million. Formerly the imperial capital of Japan for more than one thousand years, it is now the capital city of Kyoto Prefecture located in the Kansai region, as well as a major part of the Kyoto-Osaka-Kobe metropolitan area.
+</p>		
+	</div>
+	<div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+
+
+<div data-role="page" id="Egypt">
+	<div data-role="header">
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>Egypt</h1> 
+	</div>
+    <div class="spot_image">	
+		<center><img src="images/Egypt.jpg" id="banner_image" ></center>		
+	</div>
+	<div data-role="content">	
+		<p id="paragraph">
+		Egypt, officially: the Arab Republic of Egypt, is a transcontinental country spanning the northeast corner of Africa and southwest corner of Asia, via a land bridge formed by the Sinai Peninsula. Most of its territory of 1,010,000 square kilometers (390,000 sq mi) lies within the Nile Valley of North Africa and is bordered by the Mediterranean Sea to the north, the Gaza Strip and Israel to the northeast, the Gulf of Aqaba to the east, the Red Sea to the east and south, Sudan to the south and Libya to the west.
+		</p>		
+	
+    <ul data-role="listview" data-inset="true">
+      <li data-role="divider" data-theme="a">Recommendation</li>
+      <li>
+        <a href="#Egypt_Food"  data-transition="slidedown">
+        <img src="images/Egypt Food.jpg" id="list_image"/>
+        <h2>Food</h2>
+        </a>
+      </li>
+      <li>
+        <a href="#Egypt_Spot">
+        <img src="images/Egypt.jpg" id="list_image">
+        <h2>Travel Spot</h2>
+        </a>
+      </li>
+    </ul>
+</div>  
+    <div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="Egypt_Food">
+	<div data-role="header" >
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>Egypt Food</h1>
+	</div>
+	<div data-role="content">
+    <ul data-role="listview">
+      <li data-role="divider" data-theme="a">Recommmendation</li>
+      <li><a href="#Kushari"><img src="images/Kushari.jpg" id="list_image"/>Kushari</a></li>
+      <li><a href="#Falafel"><img src="images/Falafel.jpg" id="list_image"/>Falafel</a></li>
+      <li><a href="#Kashk"><img src="images/Kashk.jpg" id="list_image"/>Kashk</a></li>
+    </ul>
+    	</div>
+	<div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="Kushari">
+	<div data-role="header">
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>Kushari</h1>
+	</div>
+	<div id="content" data-role="content">
+    <center><img src="images/Kushari.jpg" id="banner_image"></center>
+    <p id="paragraph">
+	Kushari is an Egyptian dish of rice, macaroni and lentils mixed together, topped with a tomato sauce; some add spaghetti garnished with chickpeas and crispy fried onions. A sprinkling of garlic juice and hot sauce are optional.
+	</p>		
+	</div>
+	<div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="Falafel">
+	<div data-role="header">
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>Falafel</h1>
+	</div>
+	<div id="content" data-role="content">
+    <center><img src="images/Falafel.jpg" id="banner_image"></center>
+    <p id="paragraph">
+	The origin of falafel is unknown and controversial. A common theory is that the dish originated in Egypt,[10] possibly eaten by Copts as a replacement for meat during Lent.[11][12] As Alexandria is a port city, it was possible to export the dish and name to other areas in the Middle East. The dish later migrated northwards to the Levant, where chickpeas replaced the fava. It has also been theorized to a lesser extent that falafel originated during Egypt's Pharaonic Period or in the Indian subcontinent.
+	</p>		
+	</div>
+	<div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="Kashk">
+	<div data-role="header">
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>Kashk</h1>
+	</div>
+	<div id="content" data-role="content">
+    <center><img src="images/Kashk.jpg" id="banner_image"></center>
+    <p id="paragraph">
+    Kashk is used in a large family of foods found in Afghan, Kurdish, Baloch, Iranian, Palestinian, Egyptian, Lebanese and Central Asian cuisine.	
+	</p>		
+	</div>
+	<div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+
+<div data-role="page" id="Egypt_Spot">
+	<div data-role="header" >
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>Tourist Spots</h1>
+	</div>
+	<div data-role="content">
+    <ul data-role="listview">
+      <li data-role="divider" data-theme="a">Recommmendation</li>
+      <li><a href="#Sphinx"><img src="images/Sphinx.jpg" id="list_image"/>Sphinx</a></li>
+      <li><a href="#BMW_Museum"><img src="images/BMW Museum.jpg" id="list_image"/>BMW Museum</a></li>
+      <li><a href="#Karnak Temple"><img src="images/Karnak Temple.jpg" id="list_image"/>Karnak Temple</a></li>
+	  <li><a href="#Valley_of_the_Kings"><img src="images/Valley of the Kings.jpg" id="list_image"/>The Valley of the Kings</a></li>
+    </ul>
+    	</div>
+	<div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="Sphinx">
+	<div data-role="header">
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>Sphinx</h1>
+	</div>
+	<div id="content" data-role="content">
+    <center><img src="images/Sphinx.jpg" id="banner_image"></center>
+    <p id="paragraph">
+	The largest and most famous sphinx is the Great Sphinx of Giza, situated at the Giza Plateau adjacent to the Great Pyramids of Giza on the west bank of the Nile River and facing due east ( WikiMiniAtlas29°58′31″N 31°08′15″E). The sphinx is located in the north and below the pyramids. Although the date of its construction is uncertain, the head of the Great Sphinx now is believed to be that of the pharaoh Khafra.
+	</p>		
+	</div>
+	<div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="Giza Necropolis">
+	<div data-role="header">
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>Giza Necropolis</h1>
+	</div>
+	<div id="content" data-role="content">
+    <center><img src="images/Giza Necropolis.jpg" id="banner_image"></center>
+    <p id="paragraph">
+	The Giza Necropolis is an archaeological site on the Giza Plateau, on the outskirts of Cairo, Egypt. This complex of ancient monuments includes the three pyramid complexes known as the Great Pyramids, the massive sculpture known as the Great Sphinx, several cemeteries, a workers' village and an industrial complex. It is located some 9 km (5 mi) inland into the desert from the old town of Giza on the Nile, some 25 km (15 mi) southwest of Cairo city centre.
+	</p>		
+	</div>
+	<div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="Karnak Temple">
+	<div data-role="header">
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>Karnak Temple</h1>
+	</div>
+	<div id="content" data-role="content">
+    <center><img src="images/Karnak Temple.jpg" id="banner_image"></center>
+    <p id="paragraph">
+	The Karnak Temple, comprises a vast mix of decayed temples, chapels, pylons, and other buildings. Building at the complex began during the reign of Senusret I in the Middle Kingdom and continued into the Ptolemaic period, although most of the extant buildings date from the New Kingdom. 
+	</p>		
+	</div>
+	<div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="Valley_of_the_Kings">
+	<div data-role="header">
+    <a href="#page" data-role="button" data-icon="home">Home</a>
+    <a href="#" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+		<h1>The Valley of the Kings</h1>
+	</div>
+	<div id="content" data-role="content">
+    <center><img src="images/Valley of the Kings.jpg" id="banner_image"></center>
+    <p id="paragraph">
+	The Valley of the Kings is a valley in Egypt where, for a period of nearly 500 years from the 16th to 11th century BC, tombs were constructed for the Pharaohs and powerful nobles of the New Kingdom (the Eighteenth to the Twentieth Dynasties of Ancient Egypt). The valley stands on the west bank of the Nile, opposite Thebes (modern Luxor), within the heart of the Theban Necropolis.The wadi consists of two valleys, East Valley (where the majority of the royal tombs are situated) and West Valley.
+	</p>		
+	</div>
+	<div data-role="footer">
+		<h4>Footer</h4>
+	</div>
+</div>
 
 </body>
 </html>
