@@ -18,6 +18,8 @@
 #paragraph{
 text-indent : 2em;
 text-align:justify;
+margin-left:5px;
+margin-right:5px;
 }
 #list_image{
 	height:100px;	
